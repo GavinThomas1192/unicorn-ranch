@@ -70,8 +70,7 @@ export default class Trail extends React.Component {
   render() {
     return (
       <div>
-        <h1>TRAIL</h1>
-        <h1>________</h1>
+        <h1>________TRAIL________</h1>
         {this.state.trailData.length > 0 ? (
           this.state.trailData.map((ele, index) => {
             return (
@@ -106,7 +105,6 @@ export default class Trail extends React.Component {
                     </List>
                   </Collapse>
                 </List>
-                <h1>________</h1>
               </div>
             );
           })

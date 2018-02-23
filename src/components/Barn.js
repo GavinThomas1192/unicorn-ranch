@@ -72,8 +72,7 @@ export default class Barn extends React.Component {
   render() {
     return (
       <div>
-        <h1>BARN</h1>
-        <h1>________</h1>
+        <h1>________BARN________</h1>
         {this.state.barnData.length > 0 ? (
           this.state.barnData.map((ele, index) => {
             return (
@@ -114,7 +113,6 @@ export default class Barn extends React.Component {
         ) : (
           <h2>No data yet.</h2>
         )}
-        <h1>________</h1>
       </div>
     );
   }

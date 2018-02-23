@@ -141,7 +141,6 @@ export default class Dashboard extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello from Dashboard.</h1>
         <Barn barnData={this.state.barnData} userUID={this.props.userUID} />
         <Trail trailData={this.state.trailData} userUID={this.props.userUID} />
         <Pasture

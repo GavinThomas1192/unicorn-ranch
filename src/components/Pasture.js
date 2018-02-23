@@ -71,8 +71,7 @@ export default class Pasture extends React.Component {
   render() {
     return (
       <div>
-        <h1>PASTURE</h1>
-        <h1>________</h1>
+        <h1>________PASTURE________</h1>
         {this.state.pastureData.length > 0 ? (
           this.state.pastureData.map((ele, index) => {
             return (
@@ -113,7 +112,6 @@ export default class Pasture extends React.Component {
         ) : (
           <h2>No data yet.</h2>
         )}
-        <h1>________</h1>
       </div>
     );
   }

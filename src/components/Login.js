@@ -66,7 +66,7 @@ export default class Login extends React.Component {
           <br />
 
           <Button onClick={this.onLoginPress} raised color="primary">
-            <Icon>send</Icon>
+            <Icon>login</Icon>
           </Button>
         </form>
       </div>
