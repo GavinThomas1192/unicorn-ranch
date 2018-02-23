@@ -1,0 +1,47 @@
+[debug] [2018-02-23T14:46:31.127Z] ----------------------------------------------------------------------
+[debug] [2018-02-23T14:46:31.131Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-02-23T14:46:31.132Z] CLI Version:   3.17.4
+[debug] [2018-02-23T14:46:31.132Z] Platform:      darwin
+[debug] [2018-02-23T14:46:31.132Z] Node Version:  v8.1.2
+[debug] [2018-02-23T14:46:31.132Z] Time:          Fri Feb 23 2018 06:46:31 GMT-0800 (PST)
+[debug] [2018-02-23T14:46:31.132Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-23T14:46:31.182Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-23T14:46:31.183Z] > authorizing via signed-in user
+[debug] [2018-02-23T14:46:31.185Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-02-23T14:46:31.185Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/jDqja2_Xt4bid-QG6Ld1dJamM_EaeOtmGRLPgGuYyaA',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Feb 23 2018 06:46:31 GMT-0800 (PST)
+[debug] [2018-02-23T14:46:31.369Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-23T14:46:31.498Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/unicorn-ranch  
+  
+ Fri Feb 23 2018 06:46:31 GMT-0800 (PST)
+[debug] [2018-02-23T14:46:31.915Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-23T14:46:31.916Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/unicorn-ranch/tokens  
+  
+ Fri Feb 23 2018 06:46:31 GMT-0800 (PST)
+[debug] [2018-02-23T14:46:32.610Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'unicorn-ranch'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-02-23T14:46:32.969Z] >>> HTTP REQUEST PUT https://unicorn-ranch.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+ 
+ Fri Feb 23 2018 06:46:32 GMT-0800 (PST)
+[debug] [2018-02-23T14:46:33.429Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database unicorn-ranch is valid
+[info] i  hosting: preparing build directory for upload...
+[debug] [2018-02-23T14:46:33.802Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/unicorn-ranch/uploads/-L627JPqdGC8OmtGFXzb?fileCount=11&message=  
+  
+ Fri Feb 23 2018 06:46:33 GMT-0800 (PST)

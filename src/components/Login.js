@@ -27,7 +27,7 @@ export default class Login extends React.Component {
         this.setState({ userUID: response.uid }, function() {
           this.props.updateHome(this.state.userUID);
         });
-        console.log("LOGGED IN", response);
+        // console.log("LOGGED IN", response);
       })
       .catch(err => console.log(err));
   };

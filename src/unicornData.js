@@ -51,7 +51,7 @@ const unicorns = [
     location: "Barn"
   },
   {
-    name: "Joey",
+    name: "Jim",
     color: "Red",
     location: "Barn"
   },

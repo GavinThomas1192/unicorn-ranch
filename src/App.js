@@ -32,7 +32,7 @@ class App extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log("before data fetch", this.state);
+    // console.log("before data fetch", this.state);
   }
 
   // TO BROOK: USED THIS ONCE TO SEED DATABASE
