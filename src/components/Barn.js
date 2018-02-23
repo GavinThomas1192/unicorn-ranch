@@ -1,6 +1,7 @@
 import React from "react";
 import firebase from "firebase";
 import { withStyles } from "material-ui/styles";
+import "../App.css";
 
 import List, { ListItem, ListItemIcon, ListItemText } from "material-ui/List";
 import Collapse from "material-ui/transitions/Collapse";
@@ -71,16 +72,16 @@ export default class Barn extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="border">
         <h1>________BARN________</h1>
         {this.state.barnData.length > 0 ? (
           this.state.barnData.map((ele, index) => {
             return (
               <div key={index}>
                 <h2>Name:</h2>
-                <h4>{ele.name}</h4>
+                <h4 className="descriptions">{ele.name}</h4>
                 <h2>Color:</h2>
-                <h4>{ele.color}</h4>
+                <h4 className="descriptions">{ele.color}</h4>
                 <List>
                   <ListItem
                     button

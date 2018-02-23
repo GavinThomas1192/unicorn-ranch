@@ -70,16 +70,16 @@ export default class Pasture extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="border">
         <h1>________PASTURE________</h1>
         {this.state.pastureData.length > 0 ? (
           this.state.pastureData.map((ele, index) => {
             return (
               <div key={index}>
                 <h2>Name:</h2>
-                <h4>{ele.name}</h4>
+                <h4 className="descriptions">{ele.name}</h4>
                 <h2>Color:</h2>
-                <h4>{ele.color}</h4>
+                <h4 className="descriptions">{ele.color}</h4>
                 <List>
                   <ListItem
                     button
